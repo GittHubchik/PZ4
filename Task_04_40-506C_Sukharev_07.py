@@ -167,7 +167,7 @@ if __name__ == '__main__':
     # Построение графиков
     fig, ax = pylab.subplots()
     ax.plot(f * 1e-9, fall_spectr / numpy.max(fall_spectr))
-    ax.plot(f * 1e-9, scattered_spectr / numpy.max(scattered_spectr))
+    ax.plot(f * 1e-9, scattered_spectr / numpy.max(fall_spectr))
     ax.grid()
     ax.set_xlim(0, 6e9 * 1e-9)
     ax.set_xlabel('f, ГГц')
